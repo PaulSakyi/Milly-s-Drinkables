@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milly's Drinkables</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+
+    <img
+        src="images/logo.png"
+        alt="Milly's Drinkables Logo"
+        class="logo"
+    >
+
+    <h1>Milly's Drinkables</h1>
+
+    <p>Refreshing every moment</p>
+
+</header>
+
+    <section class="products">
+
+        <!-- PRODUCT 1 -->
+        <div class="product-card">
+
+            <img src="images/5Star Energy Drink.jpg" alt="Drink"
+            onclick="openImage(this.src)"
+            >
+
+            <h2>5Star Energy Drink</h2>
+
+            <p class="price">GHS 48</p>
+
+            <p class="description">
+                12 bottles in pack
+                350ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    '5Star Energy Drink',
+                    'GHS 48',
+                    'images/5Star Energy Drink.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="product-card">
+
+            <img src="images/BB Cocktail.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>BB Cocktail</h2>
+
+            <p class="price">GHS 230</p>
+
+            <p class="description">
+                330ml
+                24 in pack
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'BB Cocktail',
+                    'GHS 230',
+                    'images/BB Cocktail.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="product-card">
+
+            <img src="images/Bel Cola.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Bel Cola</h2>
+
+            <p class="price">GHS 45</p>
+
+            <p class="description">
+                16 bottles in pack
+                350ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Bel Cola',
+                    'GHS 45',
+                    'images/Bel Cola.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 4 -->
+        <div class="product-card">
+
+            <img src="images/Bel Malt.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Bel Malt</h2>
+
+            <p class="price">GHS 70</p>
+
+            <p class="description">
+                12 bottles in pack
+                330ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Bel Malt',
+                    'GHS 70',
+                    'images/Bel Malt.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 5 -->
+        <div class="product-card">
+
+            <img src="images/Beta Malt.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Beta Malt</h2>
+
+            <p class="price">GHS 95</p>
+
+            <p class="description">
+                12 bottles in pack
+                330ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Beta Malt',
+                    'GHS 95',
+                    'images/Beta Malt.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 6 -->
+        <div class="product-card">
+
+            <img src="images/Big Boss Energy Drink.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Big Boss Energy Drink</h2>
+
+            <p class="price">GHS 48</p>
+
+            <p class="description">
+                16 bottles in pack
+                350ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Big Boss Energy Drink',
+                    'GHS 48',
+                    'images/Big Boss Energy Drink.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 7 -->
+        <div class="product-card">
+
+            <img src="images/Bigoo Cocktail.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Bigoo Cocktail</h2>
+
+            <p class="price">GHS 48</p>
+
+            <p class="description">
+                20 bottles in pack
+                350ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Bigoo Cocktail',
+                    'GHS 48',
+                    'images/Bigoo Cocktail.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 8 -->
+        <div class="product-card">
+
+            <img src="images/Bigoo Orange.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Bigoo Orange</h2>
+
+            <p class="price">GHS 48</p>
+
+            <p class="description">
+                20 bottles in pack
+                350ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Bigoo Orange',
+                    'GHS 48',
+                    'images/Bigoo Orange.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 9 -->
+        <div class="product-card">
+
+            <img src="images/Canned Malt.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Canned Malt</h2>
+
+            <p class="price">GHS 260</p>
+
+            <p class="description">
+                24 in pack
+                330ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Canned Malt',
+                    'GHS 260',
+                    'images/Canned Malt.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+         <!-- PRODUCT 10 -->
+        <div class="product-card">
+
+            <img src="images/Coca-Cola (300ml).jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Coca-Cola (300ml)</h2>
+
+            <p class="price">GHS 62</p>
+
+            <p class="description">
+                12 bottles in pack
+                300ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Coca-Cola (300ml)',
+                    'GHS 62',
+                    'images/Coca-Cola (300ml).jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+         <!-- PRODUCT 11 -->
+        <div class="product-card">
+
+            <img src="images/Coca-Cola (450ml).jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Coca-Cola (450ml)</h2>
+
+            <p class="price">GHS 90</p>
+
+            <p class="description">
+                12 bottles in pack
+                450ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Coca-Cola (450ml)',
+                    'GHS 90',
+                    'images/Coca-Cola (450ml).jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 12 -->
+        <div class="product-card">
+
+            <img src="images/Darling Lemon.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Darling Lemon</h2>
+
+            <p class="price">GHS 55</p>
+
+            <p class="description">
+                12 bottles in pack
+                330ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Darling Lemon',
+                    'GHS 55',
+                    'images/Darling Lemon.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 13 -->
+        <div class="product-card">
+
+            <img src="images/Fruity.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Fruity</h2>
+
+            <p class="price">GHS 55</p>
+
+            <p class="description">
+                21 in pack
+                125ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Fruity',
+                    'GHS 55',
+                    'images/Fruity.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 14 -->
+        <div class="product-card">
+
+            <img src="images/Kalyppo.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Kalyppo</h2>
+
+            <p class="price">GHS 96</p>
+
+            <p class="description">
+                24 in pack
+                200ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Kalyppo',
+                    'GHS 96',
+                    'images/Kalyppo.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 15 -->
+        <div class="product-card">
+
+            <img src="images/Kiki Cocktail Juice.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Kiki Cocktail Juice</h2>
+
+            <p class="price">GHS 80</p>
+
+            <p class="description">
+                24 in pack
+                250ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Kiki Cocktail Juice',
+                    'GHS 80',
+                    'images/Kiki Cocktail Juice.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 16 -->
+        <div class="product-card">
+
+            <img src="images/Pukka Non-Alcoholic Drink.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Pukka Non-Alcoholic Drink</h2>
+
+            <p class="price">GHS 45</p>
+
+            <p class="description">
+                16 bottles in pack
+                350ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Pukka Non-Alcoholic Drink',
+                    'GHS 45',
+                    'images/Pukka Non-Alcoholic Drink.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 17 -->
+        <div class="product-card">
+
+            <img src="images/Pukka Xtra Alcoholic Herbal Drink.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Pukka Non-Alcoholic Drink</h2>
+
+            <p class="price">GHS 57</p>
+
+            <p class="description">
+                12 bottles in pack
+                330ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Pukka Xtra Alcoholic Herbal Drink',
+                    'GHS 57',
+                    'images/Pukka Xtra Alcoholic Herbal Drink.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 18 -->
+        <div class="product-card">
+
+            <img src="images/Rush Energy.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Rush Energy</h2>
+
+            <p class="price">GHS 48</p>
+
+            <p class="description">
+                12 bottles in pack
+                350ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Rush Energy',
+                    'GHS 48',
+                    'images/Rush Energy.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 19 -->
+        <div class="product-card">
+
+            <img src="images/Storm Energy Drink (350ml).jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Storm Energy Drink (350ml)</h2>
+
+            <p class="price">GHS 52</p>
+
+            <p class="description">
+                12 bottles in pack
+                350ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Storm Energy Drink (350ml)',
+                    'GHS 52',
+                    'images/Storm Energy Drink (350ml).jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 20 -->
+        <div class="product-card">
+
+            <img src="images/Tropical Splash.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Tropical Splash</h2>
+
+            <p class="price">GHS 42</p>
+
+            <p class="description">
+                16 bottles in pack
+                350ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Tropical Splash',
+                    'GHS 42',
+                    'images/Tropical Splash.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 21 -->
+        <div class="product-card">
+
+            <img src="images/U-Fresh Drink (CHOCOLATE).jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>U-Fresh Drink (CHOCOLATE)</h2>
+
+            <p class="price">GHS 70</p>
+
+            <p class="description">
+                15 bottles in box
+                350ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'U-Fresh Drink (CHOCOLATE)',
+                    'GHS 70',
+                    'images/U-Fresh Drink (CHOCOLATE).jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 22 -->
+        <div class="product-card">
+
+            <img src="images/U-Fresh Drink (SOY MILK).jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>U-Fresh Drink (SOY MILK)</h2>
+
+            <p class="price">GHS 70</p>
+
+            <p class="description">
+                15 bottles in box
+                350ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'U-Fresh Drink (SOY MILK)',
+                    'GHS 70',
+                    'images/U-Fresh Drink (SOY MILK).jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 23 -->
+        <div class="product-card">
+
+            <img src="images/U-Fresh Grapes.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>U-Fresh Grapes</h2>
+
+            <p class="price">GHS 38</p>
+
+            <p class="description">
+                16 bottles in pack
+                350ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'U-Fresh Grapes',
+                    'GHS 38',
+                    'images/U-Fresh Grapes.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 24 -->
+        <div class="product-card">
+
+            <img src="images/Voltic Cool Pac.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Voltic Cool Pac</h2>
+
+            <p class="price">GHS 12</p>
+
+            <p class="description">
+                30pcs in bag
+                500ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Voltic Cool Pac',
+                    'GHS 12',
+                    'images/Voltic Cool Pac.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 25 -->
+        <div class="product-card">
+
+            <img src="images/Slemfit Mineral Water.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Slemfit Mineral Water</h2>
+
+            <p class="price">GHS 28</p>
+
+            <p class="description">
+                16 bottles in pack
+                500ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Slemfit Mineral Water',
+                    'GHS 28',
+                    'images/Slemfit Mineral Water.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 26 -->
+        <div class="product-card">
+
+            <img src="images/Perla Mineral Water.jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Perla Mineral Water</h2>
+
+            <p class="price">GHS 34</p>
+
+            <p class="description">
+                24 bottles in pack
+                500ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Perla Mineral Water',
+                    'GHS 34',
+                    'images/Perla Mineral Water.jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 27 -->
+        <div class="product-card">
+
+            <img src="images/Bel Aqua Mineral Water(750ml).jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Bel Aqua Mineral Water(750ml)</h2>
+
+            <p class="price">GHS 35</p>
+
+            <p class="description">
+                15 bottles in pack
+                750ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Bel Aqua Mineral Water(750ml)',
+                    'GHS 35',
+                    'images/Bel Aqua Mineral Water(750ml).jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 28 -->
+        <div class="product-card">
+
+            <img src="images/Bel Aqua Mineral Water(500ml).jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Bel Aqua Mineral Water(500ml)</h2>
+
+            <p class="price">GHS 30</p>
+
+            <p class="description">
+                15 bottles in pack
+                500ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Bel Aqua Mineral Water(500ml)',
+                    'GHS 30',
+                    'images/Bel Aqua Mineral Water(500ml).jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+         <!-- PRODUCT 29 -->
+        <div class="product-card">
+
+            <img src="images/Bel Aqua (Active).jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+            <h2>Bel Aqua (Active)</h2>
+
+            <p class="price">GHS 45</p>
+
+            <p class="description">
+                15 bottles in pack
+                500ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Bel Aqua (Active)',
+                    'GHS 45',
+                    'images/Bel Aqua (Active).jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+        <!-- PRODUCT 30 -->
+        <div class="product-card">
+
+            <img src="images/Awake Purified Drinking Water (750ml).jpg" alt="Drink"
+            onclick="openImage(this.src)">
+
+
+            <h2>Awake Purified Drinking Water (750ml)</h2>
+
+            <p class="price">GHS 32</p>
+
+            <p class="description">
+                15 bottles in pack
+                750ml
+            </p>
+
+            <button
+                class="buy-btn"
+                onclick="openPopup(
+                    'Awake Purified Drinking Water (750ml)',
+                    'GHS 32',
+                    'images/Awake Purified Drinking Water (750ml).jpg'
+                )"
+            >
+                Buy Now
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- POPUP -->
+
+    <div class="popup" id="popup">
+
+        <div class="popup-content">
+
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+
+            <h2>Place Your Order</h2>
+
+            <form id="orderForm">
+
+                <input type="hidden" id="productName">
+                <input type="hidden" id="productPrice">
+                <input type="hidden" id="productImage">
+
+                <label>Quantity</label>
+                <input type="number" id="quantity">
+
+                <small class="error" id="quantityError"></small>
+
+                <label>Phone Number</label>
+                <input type="text" id="phone">
+
+                <small class="error" id="phoneError"></small>
+
+                <label>Location</label>
+                <input type="text" id="location">
+
+                <small class="error" id="locationError"></small>
+
+                <button type="submit" id="sendBtn">
+                    Send Order
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script>
+function openImage(src) {
+    document.getElementById("imgPopup").style.display = "flex";
+    document.getElementById("popupImg").src = src;
+}
+
+function closeImage() {
+    document.getElementById("imgPopup").style.display = "none";
+}
+</script>
+
+<div id="imgPopup" class="img-popup" onclick="closeImage()">
+    <img id="popupImg" src="">
+</div>
+
+</body>
+</html>
