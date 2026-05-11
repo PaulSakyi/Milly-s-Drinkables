@@ -877,32 +877,26 @@
 
         <h2>Place Your Order</h2>
 
-        <!-- IMPORTANT: NOW SENDS TO PHP -->
-        <form id="orderForm" action="order.php" method="POST">
+        <form name="order" method="POST" data-netlify="true">
 
-            <input type="hidden" name="productName" id="productName">
-            <input type="hidden" name="productPrice" id="productPrice">
-            <input type="hidden" name="productImage" id="productImage">
+    <input type="hidden" name="form-name" value="order">
 
-            <label>Quantity</label>
-            <input type="number" name="quantity" id="quantity" value="1" min="1">
-            <small class="error" id="quantityError"></small>
+    <input type="hidden" name="productName" id="productName">
+    <input type="hidden" name="productPrice" id="productPrice">
+    <input type="hidden" name="productImage" id="productImage">
 
-            <label>Phone</label>
-            <input type="text" name="phone" id="phone">
-            <small class="error" id="phoneError"></small>
+    <label>Quantity</label>
+    <input type="number" name="quantity" id="quantity" value="1" min="1">
 
-            <label>Location</label>
-            <input type="text" name="location" id="location">
-            <small class="error" id="locationError"></small>
+    <label>Phone Number</label>
+    <input type="text" name="phone" id="phone">
 
-            <button type="submit">Send Order</button>
+    <label>Location</label>
+    <input type="text" name="location" id="location">
 
-        </form>
+    <button type="submit">Send Order</button>
 
-    </div>
-    
-</div>
+</form>
 
 <!-- IMAGE POPUP -->
 <div id="imgPopup" class="img-popup" onclick="closeImage()" style="display:none;">

@@ -10,7 +10,6 @@ function closePopup() {
     document.getElementById("popup").style.display = "none";
 }
 
-// IMAGE PREVIEW
 function openImage(src) {
     document.getElementById("imgPopup").style.display = "flex";
     document.getElementById("popupImg").src = src;
