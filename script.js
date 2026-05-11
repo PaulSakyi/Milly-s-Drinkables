@@ -1,65 +1,51 @@
+function openPopup(name, price, image) {
+    document.getElementById("popup").style.display = "block";
+
+    document.getElementById("productName").value = name;
+    document.getElementById("productPrice").value = price;
+    document.getElementById("productImage").value = image;
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+// IMAGE PREVIEW
+function openImage(src) {
+    document.getElementById("imgPopup").style.display = "flex";
+    document.getElementById("popupImg").src = src;
+}
+
+function closeImage() {
+    document.getElementById("imgPopup").style.display = "none";
+}
+
+// SIMPLE VALIDATION (optional but useful)
 document.getElementById("orderForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    let quantity = document.getElementById("quantity").value.trim();
-    let phone = document.getElementById("phone").value.trim();
-    let location = document.getElementById("location").value.trim();
-
-    let productName = document.getElementById("productName").value;
-    let productPrice = document.getElementById("productPrice").value;
+    
+    let quantity = document.getElementById("quantity").value;
+    let phone = document.getElementById("phone").value;
+    let location = document.getElementById("location").value;
 
     let valid = true;
-
-    document.getElementById("quantityError").innerText = "";
-    document.getElementById("phoneError").innerText = "";
-    document.getElementById("locationError").innerText = "";
-
+    
     if (quantity === "") {
-        document.getElementById("quantityError").innerText = "Quantity required";
+        document.getElementById("quantityError").innerText = "Required";
         valid = false;
     }
 
     if (phone === "") {
-        document.getElementById("phoneError").innerText = "Phone number required";
+        document.getElementById("phoneError").innerText = "Required";
         valid = false;
     }
 
     if (location === "") {
-        document.getElementById("locationError").innerText = "Location required";
+        document.getElementById("locationError").innerText = "Required";
         valid = false;
     }
 
-    if (!valid) return;
-
-    let message = `New Order from Milly's Drinkables
-
-Product: ${productName}
-Price: ${productPrice}
-Quantity: ${quantity}
-Phone: ${phone}
-Location: ${location}`;
-
-    // 📱 MOBILE USERS → WHATSAPP
-    if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
-
-        let whatsappNumber = "233540992910";
-
-        let whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-
-        window.open(whatsappURL, "_blank");
+    if (!valid) {
+        e.preventDefault();
     }
-
-    // 💻 DESKTOP USERS → EMAIL
-    else {
-
-        let email = "paulsak123@gmail.com";
-        let subject = "New Order from Milly's Drinkables";
-
-        let mailURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-        
-        window.location.href = mailURL;
-    }
-
-    closePopup();
-    document.getElementById("orderForm").reset();
+    
 });

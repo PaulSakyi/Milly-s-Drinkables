@@ -870,59 +870,43 @@
     </section>
 
     <!-- POPUP -->
-
-    <div class="popup" id="popup" style="display:none;">
-
+<div class="popup" id="popup" style="display:none;">
     <div class="popup-content">
 
         <span class="close-btn" onclick="closePopup()">&times;</span>
 
         <h2>Place Your Order</h2>
 
-        <form id="orderForm">
+        <!-- IMPORTANT: NOW SENDS TO PHP -->
+        <form id="orderForm" action="order.php" method="POST">
 
-            <input type="hidden" id="productName">
-            <input type="hidden" id="productPrice">
-            <input type="hidden" id="productImage">
+            <input type="hidden" name="productName" id="productName">
+            <input type="hidden" name="productPrice" id="productPrice">
+            <input type="hidden" name="productImage" id="productImage">
 
             <label>Quantity</label>
-            <input type="number" id="quantity" value="1" min="1">
-
+            <input type="number" name="quantity" id="quantity" value="1" min="1">
             <small class="error" id="quantityError"></small>
 
-            <label>Phone Number</label>
-            <input type="text" id="phone">
-
+            <label>Phone</label>
+            <input type="text" name="phone" id="phone">
             <small class="error" id="phoneError"></small>
 
             <label>Location</label>
-            <input type="text" id="location">
-
+            <input type="text" name="location" id="location">
             <small class="error" id="locationError"></small>
 
-            <button type="submit" id="sendBtn">
-                Send Order
-            </button>
+            <button type="submit">Send Order</button>
 
         </form>
 
     </div>
-
+    
 </div>
 
-    <script>
-function openImage(src) {
-    document.getElementById("imgPopup").style.display = "flex";
-    document.getElementById("popupImg").src = src;
-}
-
-function closeImage() {
-    document.getElementById("imgPopup").style.display = "none";
-}
-</script>
-
+<!-- IMAGE POPUP -->
 <div id="imgPopup" class="img-popup" onclick="closeImage()" style="display:none;">
-    <img id="popupImg" src="" alt="Preview Image">
+    <img id="popupImg">
 </div>
 
 <script src="script.js"></script>
