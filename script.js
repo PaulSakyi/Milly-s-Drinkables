@@ -76,8 +76,8 @@ Location: ${location}`;
 
         let whatsappNumber = "233540992910";
 
-        let whatsappURL = https://wa.me/233540992910
-`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+        let whatsappURL = https//wa.me/233540992910
+        `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
         window.open(whatsappURL, "_blank");
 
