@@ -1,6 +1,4 @@
-document.getElementById("orderForm")
-.addEventListener("submit", function(e){
-
+document.getElementById("orderForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
     let quantity = document.getElementById("quantity").value.trim();
@@ -16,25 +14,24 @@ document.getElementById("orderForm")
     document.getElementById("phoneError").innerText = "";
     document.getElementById("locationError").innerText = "";
 
-    if(quantity === ""){
+    if (quantity === "") {
         document.getElementById("quantityError").innerText = "Quantity required";
         valid = false;
     }
 
-    if(phone === ""){
+    if (phone === "") {
         document.getElementById("phoneError").innerText = "Phone number required";
         valid = false;
     }
 
-    if(location === ""){
+    if (location === "") {
         document.getElementById("locationError").innerText = "Location required";
         valid = false;
     }
 
-    if(!valid) return;
+    if (!valid) return;
 
-    let message =
-`New Order from Milly's Drinkables
+    let message = `New Order from Milly's Drinkables
 
 Product: ${productName}
 Price: ${productPrice}
@@ -47,8 +44,7 @@ Location: ${location}`;
 
         let whatsappNumber = "233540992910";
 
-        let whatsappURL = https//wa.me/233540992910
-`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+        let whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
         window.open(whatsappURL, "_blank");
     }
@@ -56,13 +52,11 @@ Location: ${location}`;
     // 💻 DESKTOP USERS → EMAIL
     else {
 
-        let email = "paulsak123@gmail.com"; // CHANGE THIS
-
+        let email = "paulsak123@gmail.com";
         let subject = "New Order from Milly's Drinkables";
 
         let mailURL = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-
+        
         window.location.href = mailURL;
     }
 

@@ -871,44 +871,44 @@
 
     <!-- POPUP -->
 
-    <div class="popup" id="popup">
+    <div class="popup" id="popup" style="display:none;">
 
-        <div class="popup-content">
+    <div class="popup-content">
 
-            <span class="close-btn" onclick="closePopup()">&times;</span>
+        <span class="close-btn" onclick="closePopup()">&times;</span>
 
-            <h2>Place Your Order</h2>
+        <h2>Place Your Order</h2>
 
-            <form id="orderForm">
+        <form id="orderForm">
 
-                <input type="hidden" id="productName">
-                <input type="hidden" id="productPrice">
-                <input type="hidden" id="productImage">
+            <input type="hidden" id="productName">
+            <input type="hidden" id="productPrice">
+            <input type="hidden" id="productImage">
 
-                <label>Quantity</label>
-                <input type="number" id="quantity">
+            <label>Quantity</label>
+            <input type="number" id="quantity" value="1" min="1">
 
-                <small class="error" id="quantityError"></small>
+            <small class="error" id="quantityError"></small>
 
-                <label>Phone Number</label>
-                <input type="text" id="phone">
+            <label>Phone Number</label>
+            <input type="text" id="phone">
 
-                <small class="error" id="phoneError"></small>
+            <small class="error" id="phoneError"></small>
 
-                <label>Location</label>
-                <input type="text" id="location">
+            <label>Location</label>
+            <input type="text" id="location">
 
-                <small class="error" id="locationError"></small>
+            <small class="error" id="locationError"></small>
 
-                <button type="submit" id="sendBtn">
-                    Send Order
-                </button>
+            <button type="submit" id="sendBtn">
+                Send Order
+            </button>
 
-            </form>
-
-        </div>
+        </form>
 
     </div>
+
+</div>
 
     <script>
 function openImage(src) {
@@ -921,8 +921,8 @@ function closeImage() {
 }
 </script>
 
-<div id="imgPopup" class="img-popup" onclick="closeImage()">
-    <img id="popupImg" src="">
+<div id="imgPopup" class="img-popup" onclick="closeImage()" style="display:none;">
+    <img id="popupImg" src="" alt="Preview Image">
 </div>
 
 <script src="script.js"></script>
