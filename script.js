@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (e) {
 
         let quantity = document.getElementById("quantity").value.trim();
+        let customerName = document.getElementById("customerName").value.trim();
         let phone = document.getElementById("phone").value.trim();
         let location = document.getElementById("location").value.trim();
 
@@ -34,19 +35,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Clear previous errors
         document.getElementById("quantityError").innerText = "";
+        document.getElementById("nameError").innerText = "";
         document.getElementById("phoneError").innerText = "";
         document.getElementById("locationError").innerText = "";
 
+        // Quantity validation
         if (quantity === "") {
             document.getElementById("quantityError").innerText = "Required";
             valid = false;
         }
 
+        // Name validation
+        if (customerName === "") {
+            document.getElementById("nameError").innerText = "Required";
+            valid = false;
+        }
+
+        // Phone validation
         if (phone === "") {
             document.getElementById("phoneError").innerText = "Required";
             valid = false;
         }
 
+        // Location validation
         if (location === "") {
             document.getElementById("locationError").innerText = "Required";
             valid = false;
