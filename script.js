@@ -91,19 +91,19 @@ function searchProducts() {
 
 }
 
-// DARK MODE TOGGLE
+// DARK MODE TOGGLE SWITCH
 
-const darkModeToggle = document.getElementById("darkModeToggle");
+const toggle = document.getElementById("darkModeToggle");
+const modeText = document.getElementById("modeText");
 
-darkModeToggle.addEventListener("click", function(){
+toggle.addEventListener("change", function(){
 
     document.body.classList.toggle("dark-mode");
 
-    // Change icon
     if(document.body.classList.contains("dark-mode")){
-        darkModeToggle.innerHTML = "☀️";
+        modeText.innerText = "Light Mode";
     } else {
-        darkModeToggle.innerHTML = "🌙";
+        modeText.innerText = "Dark Mode";
     }
 
 });
