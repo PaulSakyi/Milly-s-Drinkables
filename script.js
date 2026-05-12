@@ -90,3 +90,20 @@ function searchProducts() {
     });
 
 }
+
+// DARK MODE TOGGLE SWITCH
+
+const toggle = document.getElementById("darkModeToggle");
+const modeText = document.getElementById("modeText");
+
+toggle.addEventListener("change", function(){
+
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+        modeText.innerText = "Light Mode";
+    } else {
+        modeText.innerText = "Dark Mode";
+    }
+
+});
