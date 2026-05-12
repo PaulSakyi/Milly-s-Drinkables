@@ -404,3 +404,75 @@ body.dark-mode .description{
 body.dark-mode .close-btn{
     color:white;
 }
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    position:relative;
+    margin-bottom:20px;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    list-style:none;
+}
+
+.nav-links li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.dark-mode-menu{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:5px;
+}
+
+/* MENU TOGGLE */
+
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:white;
+}
+
+/* MOBILE MENU */
+
+@media (max-width:768px){
+
+    .navbar{
+        justify-content:space-between;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:50px;
+        right:0;
+        background:#00a2ff;
+        width:200px;
+        padding:20px;
+        border-radius:10px;
+        box-shadow:0 0 10px rgba(0,0,0,0.3);
+        z-index:1000;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+}
