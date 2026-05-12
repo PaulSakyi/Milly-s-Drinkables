@@ -875,9 +875,14 @@
 
         <span class="close-btn" onclick="closePopup()">&times;</span>
 
-        <h2>Place Your Order</h2>
-
-        <form name="order" method="POST" data-netlify="true">
+        <form 
+    id="orderForm"
+    name="order"
+    method="POST"
+    data-netlify="true"
+    netlify
+    action="/success.html"
+>
 
     <input type="hidden" name="form-name" value="order">
 
@@ -885,14 +890,17 @@
     <input type="hidden" name="productPrice" id="productPrice">
     <input type="hidden" name="productImage" id="productImage">
 
-    <label>Quantity</label>
-    <input type="number" name="quantity" id="quantity" value="1" min="1">
+   <label>Quantity</label>
+<input type="number" name="quantity" id="quantity" value="1" min="1">
+<span id="quantityError" class="error"></span>
 
-    <label>Phone Number</label>
-    <input type="text" name="phone" id="phone">
+<label>Phone Number</label>
+<input type="text" name="phone" id="phone">
+<span id="phoneError" class="error"></span>
 
-    <label>Location</label>
-    <input type="text" name="location" id="location">
+<label>Location</label>
+<input type="text" name="location" id="location">
+<span id="locationError" class="error"></span>
 
     <button type="submit">Send Order</button>
 

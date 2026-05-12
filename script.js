@@ -19,32 +19,43 @@ function closeImage() {
     document.getElementById("imgPopup").style.display = "none";
 }
 
-// SIMPLE VALIDATION (optional but useful)
-document.getElementById("orderForm").addEventListener("submit", function (e) {
-    
-    let quantity = document.getElementById("quantity").value;
-    let phone = document.getElementById("phone").value;
-    let location = document.getElementById("location").value;
+// FORM VALIDATION
+document.addEventListener("DOMContentLoaded", function () {
 
-    let valid = true;
-    
-    if (quantity === "") {
-        document.getElementById("quantityError").innerText = "Required";
-        valid = false;
-    }
+    const form = document.getElementById("orderForm");
 
-    if (phone === "") {
-        document.getElementById("phoneError").innerText = "Required";
-        valid = false;
-    }
+    form.addEventListener("submit", function (e) {
 
-    if (location === "") {
-        document.getElementById("locationError").innerText = "Required";
-        valid = false;
-    }
+        let quantity = document.getElementById("quantity").value.trim();
+        let phone = document.getElementById("phone").value.trim();
+        let location = document.getElementById("location").value.trim();
 
-    if (!valid) {
-        e.preventDefault();
-    }
-    
+        let valid = true;
+
+        // Clear previous errors
+        document.getElementById("quantityError").innerText = "";
+        document.getElementById("phoneError").innerText = "";
+        document.getElementById("locationError").innerText = "";
+
+        if (quantity === "") {
+            document.getElementById("quantityError").innerText = "Required";
+            valid = false;
+        }
+
+        if (phone === "") {
+            document.getElementById("phoneError").innerText = "Required";
+            valid = false;
+        }
+
+        if (location === "") {
+            document.getElementById("locationError").innerText = "Required";
+            valid = false;
+        }
+
+        if (!valid) {
+            e.preventDefault();
+        }
+
+    });
+
 });

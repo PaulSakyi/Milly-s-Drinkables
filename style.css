@@ -99,6 +99,9 @@ header{
     width:100%;
     height:100%;
     background:rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    overflow-y:auto;
+    padding:20px;
 }
 
 .popup-content{
@@ -155,6 +158,18 @@ header{
     max-width:90%;
     max-height:90%;
     border-radius:10px;
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn{
+    from{
+        transform:scale(0.8);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
 }
 
 .product-card img{
@@ -162,9 +177,10 @@ header{
 }
 
 .error{
-    color:red;
-    font-size:13px;
-    margin-bottom:10px;
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
 }
 
 @media (max-width:768px){
