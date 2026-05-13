@@ -404,3 +404,16 @@ body.dark-mode .description{
 body.dark-mode .close-btn{
     color:white;
 }
+
+body.dark-mode .order-note{
+    color:#ccc;
+}
+
+.order-note{
+    font-size:13px;
+    color:#555;
+    margin-top:10px;
+    margin-bottom:15px;
+    text-align:center;
+    line-height:1.5;
+}
