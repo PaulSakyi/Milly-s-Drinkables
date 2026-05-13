@@ -23,13 +23,6 @@ header{
 }
 
 .info-text{
-    font-weight:600;   /* makes it bold */
-    font-size:16px;
-    color:white;
-    margin:4px 0;
-}
-
-.info-text{
     font-weight:600;
     font-size:16px;
     color:white;
