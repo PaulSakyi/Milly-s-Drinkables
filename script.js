@@ -114,3 +114,11 @@ toggle.addEventListener("change", function(){
     }
 
 });
+
+window.addEventListener("load", function(){
+
+    setTimeout(function(){
+        document.getElementById("splash").style.display = "none";
+    }, 3500);
+
+});
