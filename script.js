@@ -139,3 +139,21 @@ window.addEventListener("load", function(){
     }, 4000);
 
 });
+
+window.addEventListener("load", function () {
+
+    // SPLASH SCREEN
+    setTimeout(function () {
+        document.getElementById("splash").style.display = "none";
+    }, 3000);
+
+    // PLAY INTRO SOUND
+    const introSound = document.getElementById("introSound");
+
+    introSound.volume = 0.5;
+
+    introSound.play().catch(function(error){
+        console.log("Autoplay blocked:", error);
+    });
+
+});
