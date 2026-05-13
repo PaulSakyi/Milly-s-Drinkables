@@ -499,7 +499,7 @@ body.dark-mode .order-note{
     left:0;
     width:100%;
     height:100%;
-    background:white;
+    background:#2c68eb;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -550,29 +550,6 @@ body.dark-mode .order-note{
     min-height:20px;
 }
 
-/* LOADING BAR */
-
-.loader-bar{
-    width:200px;
-    height:6px;
-    background:rgba(255,255,255,0.3);
-    margin-top:25px;
-    border-radius:10px;
-    overflow:hidden;
-}
-
-.loader-progress{
-    width:0%;
-    height:100%;
-    background:white;
-    animation: loadBar 3.5s linear forwards;
-}
-
-@keyframes loadBar{
-    to{
-        width:100%;
-    }
-}
 
 /* FADE OUT */
 
