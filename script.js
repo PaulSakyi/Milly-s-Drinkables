@@ -163,5 +163,5 @@ window.addEventListener("load", function () {
             splash.style.display = "none";
         }, 500);
 
-    }, 2000); // ⏱ splash duration (2 seconds)
+    }, 1000); // ⏱ splash duration (2 seconds)
 });
