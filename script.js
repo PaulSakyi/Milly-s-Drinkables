@@ -53,10 +53,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Phone validation
         if (phone === "") {
-            document.getElementById("phoneError").innerText = "Required";
-            valid = false;
-        }
 
+    document.getElementById("phoneError").innerText = "Required";
+    valid = false;
+
+}
+else if (!/^[0-9]{10}$/.test(phone)) {
+
+    document.getElementById("phoneError").innerText = "Phone number must be 10 digits";
+    valid = false;
+
+}
         // Location validation
         if (location === "") {
             document.getElementById("locationError").innerText = "Required";
