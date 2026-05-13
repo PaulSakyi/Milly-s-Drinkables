@@ -144,9 +144,8 @@ window.addEventListener("load", function () {
 
     setTimeout(function () {
         document.getElementById("splash").style.display = "none";
-    }, 4000);
+    }, 3500);
 
-    // typing effect
     const text = "Refreshing every moment";
     let i = 0;
 
@@ -154,7 +153,7 @@ window.addEventListener("load", function () {
         if (i < text.length) {
             document.getElementById("typingText").innerHTML += text.charAt(i);
             i++;
-            setTimeout(typeWriter, 80);
+            setTimeout(typeWriter, 50); // faster typing speed
         }
     }
 
