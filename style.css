@@ -514,7 +514,7 @@ body.dark-mode .order-note{
     height:140px;
     object-fit:cover;
     border-radius:50%;
-    border:4px solid #00a2ff;
+    border:4px solid #75b8df;
     box-shadow:0 10px 25px rgba(0,0,0,0.3);
 
     /* STAMP EFFECT */
@@ -545,7 +545,7 @@ body.dark-mode .order-note{
 
 .tagline{
     margin-top:10px;
-    font-size:16px;
+    font-size:15px;
     color:#ffffff;
     font-weight:bold;
     min-height:20px;
