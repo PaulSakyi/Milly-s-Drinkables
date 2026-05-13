@@ -122,3 +122,20 @@ window.addEventListener("load", function(){
     }, 3500);
 
 });
+
+window.addEventListener("load", function(){
+
+    const splash = document.getElementById("splash");
+    const sound = document.getElementById("introSound");
+
+    // Play sound
+    if(sound){
+        sound.play().catch(()=>{});
+    }
+
+    // Remove splash after animation
+    setTimeout(function(){
+        splash.style.display = "none";
+    }, 4000);
+
+});
