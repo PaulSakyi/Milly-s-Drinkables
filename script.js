@@ -140,22 +140,21 @@ window.addEventListener("load", function(){
 
 });
 
-window.addEventListener("load", function () {
-
-    setTimeout(function () {
-        document.getElementById("splash").style.display = "none";
-    }, 3500);
+document.addEventListener("DOMContentLoaded", function () {
 
     const text = "Refreshing every moment";
+    const tagline = document.querySelector(".tagline");
+
     let i = 0;
 
-    function typeWriter() {
+    function type() {
         if (i < text.length) {
-            document.getElementById("typingText").innerHTML += text.charAt(i);
+            tagline.innerHTML += text.charAt(i);
             i++;
-            setTimeout(typeWriter, 50); // faster typing speed
+            setTimeout(type, 50); // 🔥 FAST SPEED (lower = faster)
         }
     }
 
-    typeWriter();
+    type();
+
 });
