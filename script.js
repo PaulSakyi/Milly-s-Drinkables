@@ -139,3 +139,24 @@ window.addEventListener("load", function(){
     }, 4000);
 
 });
+
+window.addEventListener("load", function () {
+
+    setTimeout(function () {
+        document.getElementById("splash").style.display = "none";
+    }, 4000);
+
+    // typing effect
+    const text = "Refreshing every moment";
+    let i = 0;
+
+    function typeWriter() {
+        if (i < text.length) {
+            document.getElementById("typingText").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 80);
+        }
+    }
+
+    typeWriter();
+});
