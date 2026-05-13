@@ -31,7 +31,7 @@ header{
 
 /* TAGLINE STYLE */
 .tagline-style{
-    font-family:cursive;
+    font-family:'Pacifico', cursive;
     font-size:15px;
     font-weight:bold;
     letter-spacing:1px;
@@ -565,7 +565,7 @@ body.dark-mode .order-note{
 /* TAGLINE */
 .tagline{
     font-size:15px;
-    font-family:cursive;
+    font-family:'Pacifico', cursive;
     font-weight:bold;
     color:white;
     margin-top:8px;
