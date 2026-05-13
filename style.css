@@ -565,10 +565,12 @@ body.dark-mode .order-note{
 /* TAGLINE */
 .tagline{
     font-size:15px;
+    font-family:cursive;
     font-weight:bold;
     color:white;
     margin-top:8px;
     min-height:20px;
+    letter-spacing:1px;
 }
 
 
