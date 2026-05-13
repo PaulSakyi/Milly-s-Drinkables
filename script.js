@@ -115,25 +115,6 @@ toggle.addEventListener("change", function(){
 
 });
 
-window.addEventListener("load", function(){
-
-    setTimeout(function(){
-        document.getElementById("splash").style.display = "none";
-    }, 3500);
-
-});
-
-window.addEventListener("load", function(){
-
-    const splash = document.getElementById("splash");
-
-    // Remove splash after animation
-    setTimeout(function(){
-        splash.style.display = "none";
-    }, 4000);
-
-});
-
 document.addEventListener("DOMContentLoaded", function () {
 
     const text = "Refreshing every moment";
