@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (i < text.length) {
             tagline.innerHTML += text.charAt(i);
             i++;
-            setTimeout(type, 50); // 🔥 FAST SPEED (lower = faster)
+            setTimeout(type, 40); // 🔥 FAST SPEED (lower = faster)
         }
     }
 
