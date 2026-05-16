@@ -99,22 +99,28 @@ header{
 
 .buy-btn{
     margin:15px;
-    padding:12px;
+    padding:14px;
     width:calc(100% - 30px);
     border:none;
-    background:#00a2ff;
+    background:linear-gradient(135deg, #00a2ff, #0077cc);
     color:white;
     font-size:16px;
+    font-weight:600;
     cursor:pointer;
-    border-radius:5px;
+    border-radius:10px;
+    letter-spacing:0.5px;
+    box-shadow:0 6px 15px rgba(0, 162, 255, 0.25);
+    transition: all 0.25s ease;
 }
 
 .buy-btn:hover{
-    background:#0077cc;
+    transform: translateY(-2px);
+    box-shadow:0 10px 20px rgba(0, 162, 255, 0.35);
+    background:linear-gradient(135deg, #0077cc, #005fa3);
 }
 
-.buy-btn{
-    transition:0.3s ease;
+.buy-btn:active{
+    transform: scale(0.98);
 }
 
 .popup{
